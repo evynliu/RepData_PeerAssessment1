@@ -179,4 +179,4 @@ output:
     xlab("5-minute interval") + ylab("Number of steps")
 ```
 
-![](Figs/unnamed-chunk-15-1.png)<!-- -->
+![](Figs/plot1-1.png)<!-- -->
