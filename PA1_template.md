@@ -56,7 +56,7 @@ output:
   ggtitle("Total Number of Steps Per Day") + xlab("Steps Per Day") + ylab("Frequency")
 ```
 
-![](Figs/unnamed-chunk-5-1.png)<!-- -->
+![](Figs/unnamed-chunk-5-1.png?raw=true)<!-- -->
 
 3. Calculate and report the mean and median of the total number of steps taken per day
 
