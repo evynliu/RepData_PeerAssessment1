@@ -51,10 +51,12 @@ output:
 2. Make a histogram of the total number of steps taken each day
 
 ```r
-  ggplot(stepsPerDay, aes(x = steps)) + geom_histogram(fill = "royalblue3", bins = 15)+ ggtitle("Total Number of Steps Per Day") + xlab("Steps Per Day") + ylab("Frequency")
+  ggplot(stepsPerDay, aes(x = steps)) + 
+  geom_histogram(fill = "royalblue3", bins = 15)+ 
+  ggtitle("Total Number of Steps Per Day") + xlab("Steps Per Day") + ylab("Frequency")
 ```
 
-![](Figs/unnamed-chunk-5-1.png)<!-- -->
+![](Figs/unnamed chunk 5 1.png)<!-- -->
 
 3. Calculate and report the mean and median of the total number of steps taken per day
 
