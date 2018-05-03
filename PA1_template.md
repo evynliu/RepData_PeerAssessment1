@@ -85,7 +85,7 @@ output:
   labs(title = "Average Daily Steps", x = "5-minute interval", y = "Avg. steps taken")
 ```
 
-![](Figs/unnamed-chunk-7-1.png)<!-- -->
+![](figs/unnamed-chunk-7-1.png)<!-- -->
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -137,7 +137,7 @@ output:
   xlab("Steps Per Day") + ylab("Frequency")
 ```
 
-![](Figs/unnamed-chunk-12-1.png)<!-- -->
+![](figs/unnamed-chunk-12-1.png)<!-- -->
 
 ```r
   mean(newStepsPerDay$steps)
@@ -179,4 +179,4 @@ output:
     xlab("5-minute interval") + ylab("Number of steps")
 ```
 
-![](Figs/plot1-1.png)<!-- -->
+![](figs/plot1-1.png)<!-- -->

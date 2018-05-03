@@ -6,7 +6,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(fig.path='Figs/',echo = TRUE)
+knitr::opts_chunk$set(fig.path='figs/',echo = TRUE)
 ```
 
 ```{r}
@@ -34,7 +34,9 @@ knitr::opts_chunk$set(fig.path='Figs/',echo = TRUE)
 ```
 2. Make a histogram of the total number of steps taken each day
 ```{r}
-  ggplot(stepsPerDay, aes(x = steps)) + geom_histogram(fill = "royalblue3", bins = 15)+ ggtitle("Total Number of Steps Per Day") + xlab("Steps Per Day") + ylab("Frequency")
+  ggplot(stepsPerDay, aes(x = steps)) + 
+  geom_histogram(fill = "royalblue3", bins = 15)+ 
+  ggtitle("Total Number of Steps Per Day") + xlab("Steps Per Day") + ylab("Frequency")
 ```
 
 3. Calculate and report the mean and median of the total number of steps taken per day
@@ -111,7 +113,7 @@ knitr::opts_chunk$set(fig.path='Figs/',echo = TRUE)
 ```
 
 2. Make a panel plot containing a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). See the README file in the GitHub repository to see an example of what this plot should look like using simulated data.
-```{r}
+```{r plot1}
   averages <- aggregate(steps ~ interval + day, dataWMissing, mean)
   ggplot(averages, aes(interval, steps)) + geom_line(color="royalblue3") + facet_grid(day ~ .) + 
     xlab("5-minute interval") + ylab("Number of steps")
